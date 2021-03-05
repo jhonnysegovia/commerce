@@ -308,10 +308,10 @@ export default function Search({
                       hidden: !data.found,
                     })}
                   >
-                    Showing {data.products.length} results{' '}
+                    Exibindo {data.products.length} resultados{' '}
                     {q && (
                       <>
-                        for "<strong>{q}</strong>"
+                        para "<strong>{q}</strong>"
                       </>
                     )}
                   </span>
@@ -334,10 +334,10 @@ export default function Search({
                 </>
               ) : q ? (
                 <>
-                  Searching for: "<strong>{q}</strong>"
+                  Pesquisando por: "<strong>{q}</strong>"
                 </>
               ) : (
-                <>Searching...</>
+                <>Pesquisando...</>
               )}
             </div>
           )}
