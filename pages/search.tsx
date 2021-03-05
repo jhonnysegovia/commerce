@@ -20,10 +20,10 @@ import getSlug from '@lib/get-slug'
 
 // TODO (bc) : Remove or standarize this.
 const SORT = Object.entries({
-  'latest-desc': 'Latest arrivals',
-  'trending-desc': 'Trending',
-  'price-asc': 'Price: Low to high',
-  'price-desc': 'Price: High to low',
+  'latest-desc': 'Últimos Adicionados',
+  'trending-desc': 'Mais vendidos',
+  'price-asc': 'Preço: Baixo para o mais alto',
+  'price-desc': 'Preço: Alto para o mais baixo ',
 })
 
 import {
@@ -109,7 +109,7 @@ export default function Search({
                 >
                   {activeCategory?.name
                     ? `Category: ${activeCategory?.name}`
-                    : 'All Categories'}
+                    : 'Todas categoriais'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ export default function Search({
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Categories
+                          Todas Categorias
                         </a>
                       </Link>
                     </li>
@@ -323,12 +323,11 @@ export default function Search({
                   >
                     {q ? (
                       <>
-                        There are no products that match "<strong>{q}</strong>"
+                        Não há produtos que correspondem "<strong>{q}</strong>"
                       </>
                     ) : (
                       <>
-                        There are no products that match the selected category &
-                        designer
+                        Não há produtos que correspondam à categoria selecionada
                       </>
                     )}
                   </span>
